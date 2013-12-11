@@ -56,8 +56,6 @@ class FlightNetworkInfo:
 		depDelayMap = {}
 		arrDelayMap = {}
 
-		# isolationDate = '2009-03-04'
-
 		self.cursor_.execute('select OriginAirportID, avg(DepDelayMin) from Flight \
 			where Cancelled = 0 and Diverted = 0 and FlightDate < ? group by OriginAirportID', (self.ISOLATION_DATE, ))
 		depDelays = self.cursor_.fetchall()
