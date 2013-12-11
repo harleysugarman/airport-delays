@@ -1,7 +1,11 @@
 airport-delays
 ==============
 
-A simulation of the US air traffic network with a best-path finder for flights and a KML heat map generator.
+A simulation of the US air traffic network with a shortest-path finder for flights (based on linear regression and Dijkstra's algorithm), and a KML heat map generator.
+
+## Notes
+
+- To operate this code, you will need to download the SQLite database of flights we prepared (approximately 7GB in size). Due to size limitations, this is not currently stored online for public download. If the status of this changes, we will update this README with its location.
 
 ## Useful Information
 Flight Database Schema:
