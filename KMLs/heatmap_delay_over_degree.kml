@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Folder>
+    <GroundOverlay>
+      <Icon>
+        <href>heatmap_delay_over_degree.png</href>
+      </Icon>
+      <LatLonBox>
+        <north>75.0000000000000000</north>
+        <south>15.0000000000000000</south>
+        <east>-180.0000000000000000</east>
+        <west>145.0000000000000000</west>
+        <rotation>0</rotation>
+      </LatLonBox>
+    </GroundOverlay>
+  </Folder>
+</kml>
