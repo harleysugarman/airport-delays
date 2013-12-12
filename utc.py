@@ -17,17 +17,17 @@ def timeAndLocToUTC(year, month, day, hours, minutes, airportID):
 	timeZone = int(airportIDsToTimeZone[airportID])
 	timeString = "%d-%d-%d %2d:%2d:00" % (year, month, day, hours, minutes)
 	naive = datetime(year, month, day, hours, minutes, 0)
-	print naive
+	# print naive
 	naive = naive + timedelta(hours=(-1 * timeZone))
 	seconds = (naive - datetime(1970,1,1)).total_seconds()
 	return seconds
 
 def UTCToReadable(seconds, airportID):
 	timeZone = int(airportIDsToTimeZone[airportID])
-	print timeZone
-	seconds += ((timeZone + 8) * 60 * 60)
+	# print timeZone
+	seconds += (timeZone * 60 * 60)
 	readable = datetime.fromtimestamp(seconds)
-	print readable
+	# print readable
 	return str(readable.date()) + " " + str(readable.time())
 
 #print timeAndLocToUTC(2012, 2, 3, 6, 3, )

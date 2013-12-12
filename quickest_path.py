@@ -77,9 +77,9 @@ class DelayPathfinder:
 		self.month_ = int(ymd[1])
 		self.day_ = int(ymd[2])
 
-		print self.year_, " ", self.month_, " ", self.day_
+		# print self.year_, " ", self.month_, " ", self.day_
 
-		print self.coef_
+		# print self.coef_
 
 	def EstimatedDelay(self, flight):
 		originNodeInfo = self.centralities_[flight['OriginAirportID']]
@@ -193,8 +193,3 @@ class DelayPathfinder:
 				heapq.heappush(flightPathQueue, flightPathClone)
 
 		return None
-
-pathfinder = DelayPathfinder('2009-03-04', 'extra_data/linear_regression_output.pickle')
-path = pathfinder.BFS(14689, 12478, '0')
-print "FINAL PATH"
-path.printPath()
