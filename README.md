@@ -9,7 +9,7 @@ A simulation of the US air traffic network with a shortest-path finder for fligh
 
 ## Example Outputs
 
--Input: SBA -> JFK on 03-03-2009
+- Input: SBA -> JFK on 03-03-2009
 
 Next flight:  OO  flight  5510
 Departure:  -8
