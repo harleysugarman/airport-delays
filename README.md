@@ -9,18 +9,19 @@ A simulation of the US air traffic network with a shortest-path finder for fligh
 
 ## Example Outputs
 
-Input: SBA -> JFK on 03-03-2009
+- Input: 
 
-Output:
+SBA -> JFK on 03-03-2009
+
+- Output:
+
 Next flight:  OO  flight  5510
 Departure:  2009-03-03 22:03:00 from  Santa Barbara, CA,  OriginAirportID:  14689
 Arrival:    2009-03-03 23:05:53 to    Los Angeles, CA,    DestAirportID:  12892
 
 Next flight:  AA  flight  118
-Departure:  -8
-2009-03-03 23:37:00         from  Los Angeles, CA , OriginAirportID:  12892
-Arrival:  -5
-2009-03-04 07:50:42         to  New York, NY , DestAirportID:  12478
+Departure:  2009-03-03 23:37:00 from  Los Angeles, CA,  OriginAirportID:  12892
+Arrival:  2009-03-04 07:50:42   to  New York, NY,       DestAirportID:  12478
 
 ## Useful Information
 Flight Database Schema:
