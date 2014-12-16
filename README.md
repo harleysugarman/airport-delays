@@ -1,7 +1,7 @@
 airport-delays
 ==============
 
-A simulation of the US air traffic network with a shortest-path finder for flights (based on linear regression and Dijkstra's algorithm), and a KML heat map generator.
+A simulation of the US air traffic network with a shortest-path finder for flights (based on regression models and a modified Dijkstra's algorithm), and a KML heat map generator.
 
 ## Notes
 
@@ -9,13 +9,12 @@ A simulation of the US air traffic network with a shortest-path finder for fligh
 
 ## Example Outputs
 
-- Input: SBA -> JFK on 03-03-2009
+Input: SBA -> JFK on 03-03-2009
 
+Output:
 Next flight:  OO  flight  5510
-Departure:  -8
-2009-03-03 22:03:00         from  Santa Barbara, CA , OriginAirportID:  14689
-Arrival:  -8
-2009-03-03 23:05:53         to  Los Angeles, CA , DestAirportID:  12892
+Departure:  2009-03-03 22:03:00 from  Santa Barbara, CA,  OriginAirportID:  14689
+Arrival:    2009-03-03 23:05:53 to    Los Angeles, CA,    DestAirportID:  12892
 
 Next flight:  AA  flight  118
 Departure:  -8
